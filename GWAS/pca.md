@@ -15,5 +15,5 @@ plink --bfile <file>_qc --chr-set 38 --allow-extra-chr --read-genome plink.genom
 ##smartPCA
 smartpca -i <file>.ped -a <file>.pedsnp -b <file>.pedind -o <file>.pca -k 10 -p <file>.plot -e <file>.eval -l <file>.log
 
-#Visualization in R
+#Visualization in R  
 plot(pca[,1],pca[,2],xlab = "eigenvector1",ylab = "eigenvector2")
