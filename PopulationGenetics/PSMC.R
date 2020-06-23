@@ -2,7 +2,7 @@ pdf("file.pdf",height = 6,width = 10)
 par(mar = c(5, 5, 1, 1))
 plot(p1[,1],p2[,2],type="s", xlab="Years Ago ", cex.lab=1.5,cex.axis=1.5,ylim=c(0,5),ylab=expression(Effective~Population~Size~(10^4)),lwd=1.5,col="firebrick")
 library(Hmisc)
-minor.tick(nx=5,ny=10,tick.ratio = 0.5)#设置次要刻度线
+minor.tick(nx=5,ny=10,tick.ratio = 0.5)
 lines(p2[,1],p2[,2], type="s",lwd=1.5,col="dodgerblue4")
 lines(p3[,1],p2[,2], type="s",lwd=1.5,col="forestgreen")
 lines(p4[,1],p2[,2], type="s",lwd=1.5,col="darkorchid")
