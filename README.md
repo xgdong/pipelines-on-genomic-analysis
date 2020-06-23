@@ -1,4 +1,4 @@
-### pipelines on genome analysis
+### pipelines on genomic analysis
 Some pipelines on population genetics and evolutionary genetics, for examples:  
 - GWAS 
 - CNV  
