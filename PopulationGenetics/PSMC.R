@@ -1,0 +1,15 @@
+pdf("file.pdf",height = 6,width = 10)
+par(mar = c(5, 5, 1, 1))
+plot(p1[,1],p2[,2],type="s", xlab="Years Ago ", cex.lab=1.5,cex.axis=1.5,ylim=c(0,5),ylab=expression(Effective~Population~Size~(10^4)),lwd=1.5,col="firebrick")
+library(Hmisc)
+minor.tick(nx=5,ny=10,tick.ratio = 0.5)#设置次要刻度线
+lines(p2[,1],p2[,2], type="s",lwd=1.5,col="dodgerblue4")
+lines(p3[,1],p2[,2], type="s",lwd=1.5,col="forestgreen")
+lines(p4[,1],p2[,2], type="s",lwd=1.5,col="darkorchid")
+lines(p5[,1],p2[,2], type="s",lwd=1.5,col="gold")
+lines(p6[,1],p2[,2], type="s",lwd=1.5,col="darkseagreen1")
+lines(p7[,1],p2[,2], type="s",lwd=1.5,col="gray")
+lines(p8[,1],p2[,2], type="s",lwd=1.5,col="darksalmon")
+legend("topright",bty="n",pch="-",col=c("firebrick","dodgerblue4","forestgreen","darkorchid","gold","darkseagreen1","gray","darksalmon"),
+       legend=c("ZG","XPG","SCWG","MGG","LMG","HYG","GRAY","SWAN"),cex = 1.5)
+dev.off()
